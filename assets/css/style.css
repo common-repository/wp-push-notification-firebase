@@ -1,0 +1,190 @@
+#wfpn div.heading h3:after {
+    font-family: dashicons;
+    content: "\f132";
+    float: right;
+}
+
+#wfpn label.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+#wfpn label.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+#wfpn input:checked+.slider {
+    background-color: #2196F3;
+}
+
+#wfpn input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+#wfpn input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#api_key_form .form-table th,
+#welcome_notify_form .form-table th,
+#new_post_notify_form .form-table th {
+    padding: 0 !important;
+    width: 0 !important;
+}
+
+#wfpn label {
+    font-weight: 600;
+    font-size: 16px;
+    width: 20%;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+#wfpn .row {
+    margin-top: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#wfpn .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+#wfpn div.accordion h5 {
+    font-weight: 600;
+    color: #4d4d4d;
+    margin: 0.5rem 0;
+}
+
+#wfpn div.accordion h5:after {
+    font-family: dashicons;
+    /* content: "\f142"; */
+    float: right;
+}
+
+#wfpn div.accordion.active h5:after {
+    font-family: dashicons;
+    /* content: "\f140"; */
+    float: right;
+}
+
+#wfpn .active,
+#wfpn .accordion:hover {
+    background-color: #ccc;
+}
+
+#wfpn .panel {
+    padding: 0 18px;
+    /* display: none; */
+    /*background-color: white;*/
+    overflow: hidden;
+}
+
+#wfpn .accordion.heading {
+    background: #aaaa;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+#wfpn .content {
+    /*background: #fff;*/
+    padding: 0 50px;
+}
+
+#wfpn .message {
+    color: green;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#wfpn .wp-heading-inline {
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+#wfpn .section {
+    padding: 20px;
+}
+
+#wfpn textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+#wfpn input,
+#wfpn button,
+#wfpn select,
+#wfpn optgroup,
+#wfpn textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+#wfpn h5,
+#wfpn .h5 {
+    font-size: 1.25rem;
+}
+
+#wfpn {
+    background: #fff;
+}
+
+#wfpn.wrap.nosubsub {
+    background: transparent;
+}
